@@ -1,4 +1,5 @@
 import random
+import pyperclip
 
 
 char = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*"
@@ -30,6 +31,6 @@ while True:
     break
   
   if x == "yes" or x == "Yes":
-    a = 0
+    pyperclip.copy(str(password))
   else:
     break
